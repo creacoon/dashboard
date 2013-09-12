@@ -1,14 +1,7 @@
 @import 'bourbon/bourbon';
 
-// ----------------------------------------------------------------------------
-// Sass declarations
-// ----------------------------------------------------------------------------
-$background-color:  #47bbb3;
-$value-color:       #fff;
-
-.widget-google-notification {
-  background-color: $background-color;
-  color: $value-color;
+.widget-notification {
+  color: #fff;
 
   p.text {
     font-family: 'Ubuntu Condensed', 'Helvetica Nue';
