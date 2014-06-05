@@ -29,7 +29,7 @@ class Calendar < Dashing::Job
         when_end: when_node       ? DateTime.iso8601(when_node.attribute('endTime').text).to_time        : "No time"
       })
     end
-    events.sort! {|a,b| a[:when_start_raw] <=> b[:when_start_raw] }
+    events.sort! {|a,b| a[:when_start_raw] <=> b[:when_start_raw] }.reverse!
     events = events[0,2]
     events.delete_if {|event| DateTime.now().to_time.to_i>=event[:when_end_raw]}
 

@@ -10,6 +10,7 @@ class Dashing.Project extends Dashing.Widget
     @get('title') or _.str.humanize @get('id')
 
   updateCurrentStatus: (data) ->
+    console.log data
     if data.latestResult != data.result and ! data.building
       @transitionState(data.latestResult, data.result)
     else
