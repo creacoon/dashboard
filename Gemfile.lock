@@ -34,7 +34,7 @@ GEM
     activesupport (3.2.12)
       i18n (~> 0.6)
       multi_json (~> 1.0)
-    backports (3.3.1)
+    backports (3.6.4)
     bourbon (3.1.6)
       sass (>= 3.2.0)
       thor
@@ -55,6 +55,7 @@ GEM
       multi_json (~> 1.0)
       multi_xml
     i18n (0.6.4)
+    icalendar (2.2.0)
     mime-types (1.23)
     mini_portile (0.5.1)
     multi_json (1.7.4)
@@ -106,6 +107,7 @@ DEPENDENCIES
   dotenv (~> 0.7.0)
   haml (~> 4.0.3)
   httparty (~> 0.8.3)
+  icalendar (~> 2.2.0)
   nagiosharder!
   nokogiri (~> 1.6.0)
   xml-simple (~> 1.1.2)
