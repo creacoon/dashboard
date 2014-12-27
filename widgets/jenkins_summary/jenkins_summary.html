@@ -1,0 +1,17 @@
+<h1 class="title" data-bind="title"></h1>
+
+<div class="green" data-hideif="hasRedJobs">
+  <h2 data-bind="green"></h2>
+  <h3>All green!</h3>
+</div>
+
+<div class="failing" data-showif="hasRedJobs">
+  <h3>Failing jobs: </h3>
+  <ul>
+    <li data-foreach-item="red">
+      <span class="value" data-bind="item"></span>
+    </li>
+  </ul>
+</div>
+
+<p class="updated-at" data-bind="updatedAtMessage"></p>
