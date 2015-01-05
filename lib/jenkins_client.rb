@@ -9,7 +9,8 @@ class JenkinsClient
     @token    = token
   end
 
-  def get_jobs(view:)
+  def get_jobs(view: nil)
+    fail ArgumentError, 'Missing view parameter' if view.nil?
     request("/view/#{view}")['jobs']
   end
 
