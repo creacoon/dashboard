@@ -1,0 +1,14 @@
+$background-color:  #429C6A;
+$background-color-failing: #dc5945;
+
+.widget-jenkins-summary {
+  background-color: $background-color;
+
+  .updated-at {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  &.failing {
+    background-color: $background-color-failing;
+  }
+}
