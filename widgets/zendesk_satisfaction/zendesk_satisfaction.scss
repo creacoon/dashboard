@@ -1,0 +1,12 @@
+$background-color:  #78A200;
+
+.widget-zendesk-satisfaction {
+  background-color: $background-color;
+
+  img {
+    max-width: 60%;
+    top: 13%;
+    position: absolute;
+    left: 20%;
+  }
+}
