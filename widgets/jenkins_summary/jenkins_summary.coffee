@@ -14,7 +14,7 @@ class Dashing.JenkinsSummary extends Dashing.Widget
         elem.scrollTop = 0
         window.scroll_height = 0
       return
-    ), 100
+    ), 50
 
 
   @accessor 'green', Dashing.AnimatedValue
