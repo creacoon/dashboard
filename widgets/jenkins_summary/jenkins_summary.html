@@ -6,12 +6,8 @@
 </div>
 
 <div class="failing" data-showif="hasRedJobs">
-  <h3>Failing jobs: </h3>
-  <ul>
-    <li data-foreach-item="red">
-      <span class="value" data-bind="item"></span>
-    </li>
-  </ul>
+  <h2 data-bind="red"></h2>
+  <h3>Failing!</h3>
 </div>
 
 <p class="updated-at" data-bind="updatedAtMessage"></p>

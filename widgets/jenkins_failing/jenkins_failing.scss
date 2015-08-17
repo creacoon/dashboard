@@ -1,0 +1,19 @@
+$background-color:  #222222;
+$background-color-failing: #A31F1F;
+
+.widget-jenkins-failing {
+  background-color: $background-color;
+
+  .updated-at {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  &.failing {
+    background-color: $background-color-failing;
+  }
+
+  #failing_container{
+    overflow-y: hidden;
+    height: 350px;
+   }
+}

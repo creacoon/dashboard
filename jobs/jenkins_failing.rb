@@ -10,12 +10,10 @@ SCHEDULER.every '10s', first_in: 0 do
   jobs = jenkins.get_jobs(view: JENKINS_SUMMARY_VIEW)
 
   failing_jobs = -> (j) { j['color'] == 'blue' }
+  red_jobs_names   = jobs.select(&failing_jobs).map {|j| j['name'] }
 
-  red_jobs_count   = jobs.select(&failing_jobs).size
-  green_jobs_count = jobs.reject(&failing_jobs).size
-
-  send_event('jenkins-summary', {
-    red: red_jobs_count,
-    green: green_jobs_count
+  send_event('jenkins_failing', {
+    red: red_jobs_names,
+    header: (red_jobs_names.count > 0 ? "Failing jobs" : "Failing job")
   })
 end

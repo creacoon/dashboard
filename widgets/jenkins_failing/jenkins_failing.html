@@ -1,0 +1,12 @@
+<div id = "failing_container">
+  <h1 class="title" data-bind="title"></h1>
+
+  <div class="failing" data-showif="hasRedJobs">
+    <h3 data-bind="header"></h3>
+    <ul>
+      <li data-foreach-item="red">
+        <h2 class="value" data-bind="item"></h2>
+      </li>
+    </ul>
+  </div>
+</div>
